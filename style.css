@@ -1,0 +1,508 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url("./assets/fonts/HelveticaNeue\ Light.ttf");
+}
+@font-face {
+    font-family: "Helvetica-Bold";
+    src: url("./assets/fonts/Helvetica\ Neu\ Bold.ttf");
+}
+@font-face {
+    font-family: "SpaceGrotesk-Medium";
+    src: url("./assets/fonts/SpaceGrotesk-Medium.ttf");
+}
+  
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: auto;
+  margin: 0 auto;
+}
+.container {
+  width: 312px;
+  margin: auto;
+}
+.hero__container {
+  padding: 76px 0px;
+}
+.heading-1 {
+  font-family: "SpaceGrotesk-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  color: #F4F4F4;
+  text-transform: uppercase;
+}
+.title__bg--blue {
+  background-color: #1519FF;
+  padding: 0 16px 0 0;
+}
+.employees {
+  padding-top: 34px;
+}
+.employees__employee {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  margin-bottom: 48px;
+}
+.employee__section--avatar > img {
+  width: 312px;
+  height: 312px;
+}
+.employee__img1 {
+  border-radius: 150px 0 0 0;
+}
+.employee__img2 {
+  border-radius: 50%;
+}
+.employee__img4 {
+  border-radius: 0 150px 0 0;
+}
+.employee__aside {
+  border-top: solid 1px rgba(0, 0, 0, 0.3);
+  padding: 16px 0;
+}
+.name {
+  font-family: "SpaceGrotesk-Medium";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.employee__aside--position {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #676767;
+  margin-top: 4px;
+}
+.employee__aside--hours {
+  font-family: "Helvetica-Bold";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 170%;
+  margin-top: 10px;
+}
+
+.employee__aside--desc {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #676767;
+  margin-top: 8px;
+}
+
+
+.service__container {
+  padding: 76px 0px;
+}
+.subscription {
+  padding-top: 48px;
+}
+.subscription__list--item {
+  list-style-type: none;
+  margin-bottom: 32px;
+}
+.subscription__start {
+  font-family: "SpaceGrotesk-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.subscription__start--date {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #676767;
+  text-transform: lowercase;
+  padding-left: 8px;
+}
+.subscription__remained {
+  font-family: "SpaceGrotesk-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+.subscription__remained--seats {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #676767;
+  text-transform: lowercase;
+  padding-left: 8px;
+}
+
+.subscription__info {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  color: #676767;
+  margin-top: 32px;
+}
+.subscription__list--aside {
+  background:  #F4F4F4;
+  padding: 24px 16px 0px 16px;
+}
+.subscription__plan {
+  margin-bottom: 24px;
+}
+.subscription__plan--p {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #676767;
+}
+.subscription__cost {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscription__cost--actual {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  margin-right: 16px; 
+}
+.subscription__cost--actual-cost {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: bolder;
+}
+.subscription__cost--actual-cost::after {
+  content: '\20BD';
+  font-family: "SpaceGrotesk-Medium";
+  font-weight: normal;
+}
+.subscription__cost--actual-permonth {
+  font-size: 16px;
+  line-height: 170%;
+  margin-top: 14px;
+  font-weight: bolder;
+}
+.subscription__discount {
+  padding: 10px 20px;
+  width: 105px;
+  height: 56px;
+  background: #FEF653;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.subscription__discount--percentage {
+  font-family: "SpaceGrotesk-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+.subscription__discount--date {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 140%;
+  color: #676767;
+  word-spacing: -1px;
+}
+
+.subscription__discount-price {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  color: #676767;
+}
+
+.subscription__discount-price--nodiscount {
+  font-size: 8px;
+  line-height: 11px;
+}
+
+.subscription__discount-price--permonth {
+  font-size: 24px;
+  line-height: 41px;
+  padding-bottom: 20px;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+.subscription__discount-price--permonth > span::before {
+  content: '\20BD';
+  font-family: "SpaceGrotesk-Medium";
+  font-weight: normal;
+}
+.subscribtion__input {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #676767;
+  padding: 8px 0;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  width: 100%;
+  height: 30px;
+  color: #676767;
+  margin-bottom: 24px;
+}
+.subscribtion__input:focus {
+  border-color: red;
+}
+.subscribtion__input--btn {
+  font-family: "SpaceGrotesk-Medium";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 110%;
+  outline: none;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.subscribtion__input--btn:hover {
+  color:  #676767;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 704px;
+  }
+  .heading-1 {
+    font-size: 48px;
+  }
+  .title__bg--blue {
+    padding: 0 4px 0 0;
+  }
+  .employees {
+    padding-top: 48px;
+  }
+  .employee__section--avatar > img {
+    width: 100%;
+    height: 100%;
+  }
+  .employees__employee {
+    flex-direction: row;
+  }
+  .employee__section {
+    width: 48.7%;
+  }
+  .employee__aside {
+    width: 51.3%;
+  }
+  .employee__section--avatar > img {
+    width: 343px;
+    height: 343px;
+  }
+  .employee__aside {
+    padding: 20px 18px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .employee__aside--position {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .employee__aside--hours {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .employee__aside--desc {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .subscription__list {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+  }
+  .subscription__list--section {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .subscription__start {
+    font-size: 18px;
+  }
+  .subscription__start--date {
+    font-size: 14px;
+  }
+  .subscription__remained {
+    font-size: 18px;
+  }
+  .subscription__remained--seats {
+    font-size: 14px;
+  }
+  .subscription__list--aside {
+    padding: 32px 16px 0px 16px;
+  }
+  .subscription__plan--p {
+    font-size: 14px;
+  }
+  .subscription__cost--actual-cost {
+    font-size: 32px;
+  }
+  .subscription__discount {
+    width: 121px;
+    height: 61px;
+  }
+  .subscription__discount--percentage {
+    font-size: 16px;
+  }
+  .subscription__discount--date {
+    font-size: 10px;
+  }
+  .subscription__discount-price--nodiscount {
+    font-size: 10px;
+  }
+  .subscription__discount-price--permonth {
+    font-size: 16px;
+  }
+  .subscribtion__input {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    min-width: 1270px;
+  }
+  .hero__container {
+    padding: 96px 0px;
+  }
+  .heading-1 {
+    font-size: 72px;
+  }
+  .employees__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .employees__employee {
+    list-style-type: none;
+    display: flex;
+    width: 48.8%;
+    margin-bottom: 32px;
+  }
+  .employee__section--avatar > img {
+    width: 294px;
+    height: 294px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .employee__aside--position {
+    font-size: 16px;
+  }
+  .employee__aside--hours {
+    font-size: 16px
+  }
+  .employee__aside--desc {
+    font-size: 16px;
+    width: 90%;
+  }
+  .employee__section {
+    width: 47.5%;
+  }
+  .employee__aside {
+    width: 52.5%;
+  }
+  .employee__aside {
+    padding: 24px 32px;
+  }
+  .employees__employee:nth-child(4n+3) > .employee__aside, 
+  .employees__employee:nth-child(4n+3) + .employees__employee .employee__aside {
+    padding-left: 0px;
+  }
+  .employees__employee:nth-child(n+3) {
+    flex-direction: row-reverse;
+  }
+  .subscription__start {
+    font-size: 20px;
+  }
+  .subscription__start--date {
+    font-size: 16px;
+  }
+  .subscription__remained {
+    font-size: 20px;
+  }
+  .subscription__remained--seats {
+    font-size: 16px;
+  }
+  .subscription__info {
+    margin-top: 40px;
+  }
+  .subscription__info {
+    font-size: 24px;
+  }
+  .subscription__list--section {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .subscription__list--aside {
+    grid-row: 1/3;
+  }
+  .subscription__list--aside {
+    padding: 42px;
+  }
+  .subscription__plan--p {
+    font-size: 16px;
+  }
+  .subscription__cost--actual-cost {
+    font-size: 52px;
+  }
+  .subscription__cost--actual-permonth {
+    font-size: 24px;
+  }
+  .subscription__discount {
+    width: 153px;
+    height: 73px;
+  }
+  .subscription__discount--percentage {
+    font-size: 20px;
+  }
+  .subscription__discount--date {
+    font-size: 14px;
+  }
+  .subscription__plan {
+    margin-bottom: 38px;
+  }
+  .subscription__discount-price--nodiscount {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .subscription__discount-price--permonth {
+    font-size: 24px;
+  }
+  .subscription__list--item {
+    margin-bottom: 72px;
+  }
+}
